@@ -1,0 +1,25 @@
+name: plume_hunter
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - ipykernel
+  - loguru
+  - matplotlib
+  - numpy==2.3.1
+  - pip
+  - pip:
+      - cartopy==0.24.1
+      - georeader-spaceml
+      - kornia
+      - rasterio
+      - torchmetrics==1.7.4
+  - python=3.13.5
+  - pytorch
+  - pytorch-cuda
+  - scikit-learn
+  - tomlkit
+  - torchvision
+  - tqdm
+  - wandb
