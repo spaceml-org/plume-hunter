@@ -208,10 +208,7 @@ def apply_mask_normalization_2_input_get_mask_outputs(
     """
     # Get mask of padding pixels
     padding_mask_inputs = get_padding_mask_inputs(imgs)
-    if (
-        selected_task == Task.SEM_SEGMENTATION
-        or selected_task == Task.CONCENTRATION_REGRESSION
-    ):
+    if selected_task == Task.SEM_SEGMENTATION:
         # Get mask for ingoring padding in outputs and targets (only for sem segm and regr)
         no_pad_mask_outs_and_targets = get_no_padding_mask_outs_targets(imgs)
 
@@ -221,10 +218,7 @@ def apply_mask_normalization_2_input_get_mask_outputs(
     # imgs = 0.1 + 0.9 * (imgs - imgs.min()) / (imgs.max() - imgs.min())
     # Set default values to 0 for gradient purposes
     imgs[padding_mask_inputs] = 0
-    if (
-        selected_task == Task.SEM_SEGMENTATION
-        or selected_task == Task.CONCENTRATION_REGRESSION
-    ):
+    if selected_task == Task.SEM_SEGMENTATION:
         return imgs, no_pad_mask_outs_and_targets
     else:
         return imgs
@@ -252,19 +246,13 @@ def apply_mask_2_input_get_mask_outputs(
     """
     # Get mask of padding pixels
     padding_mask_inputs = get_padding_mask_inputs(imgs)
-    if (
-        selected_task == Task.SEM_SEGMENTATION
-        or selected_task == Task.CONCENTRATION_REGRESSION
-    ):
+    if selected_task == Task.SEM_SEGMENTATION:
         # Get mask for ingoring padding in outputs and targets (only for sem segm and regr)
         no_pad_mask_outs_and_targets = get_no_padding_mask_outs_targets(imgs)
 
     # Set default values to 0 for gradient purposes
     imgs[padding_mask_inputs] = 0
-    if (
-        selected_task == Task.SEM_SEGMENTATION
-        or selected_task == Task.CONCENTRATION_REGRESSION
-    ):
+    if selected_task == Task.SEM_SEGMENTATION:
         return imgs, no_pad_mask_outs_and_targets
     else:
         return imgs

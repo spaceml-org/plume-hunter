@@ -663,9 +663,7 @@ data_stats = {
 
 
 class Task(Enum):
-    CLASSIFICATION = 1
     SEM_SEGMENTATION = 2
-    CONCENTRATION_REGRESSION = 3
 
 
 class PlumeHunterDataset(Dataset):
@@ -673,7 +671,7 @@ class PlumeHunterDataset(Dataset):
         self,
         scene_ids: list[str],
         data_dir,
-        task=Task.CLASSIFICATION,
+        task,
         orthorectified=True,
         input_output_mapping=None,
         subset=False,
@@ -691,8 +689,7 @@ class PlumeHunterDataset(Dataset):
             data_dir (str): Path to the directory containing the dataset.
             orthorectified (bool): If True, use orthorectified tiles,
               otherwise use unorthorectified.
-            task (Task): selected task between image classification, semantic
-              segmentation, or regression of gas concentration.
+            task (Task): selected task.
             input_output_mapping (str): Path to the input/output mapping
               dictionary (if it does not exist it will be created on the fly).
             subset (bool): If True, use a subset of the data.
