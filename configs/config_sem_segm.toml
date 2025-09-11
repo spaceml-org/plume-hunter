@@ -1,0 +1,49 @@
+# Config file
+[reproducibility]
+# Random seed
+seed = 0
+
+[data]
+data_dir = "/path/to/data"
+# Plume, No plume
+num_classes = 2
+num_bands = 86
+
+perc_val_compared_to_val_plus_test = 0.90
+only_plumes=false
+cell_km_geogr_split = 60
+train_size=0.8
+
+exclude_corrupted=true
+extra_jitt = true
+augm_data = false
+orthorectified = false
+
+[training]
+task = 2
+model_arch = "UNet"
+hidden_channels = 16
+epochs = 1000
+# Learning rate
+lr = 1e-4
+# Batch sizes
+batch_size = 32
+test_batch_size = 32
+# Disables CUDA training
+no_cuda = false
+load_model_path = ''
+# Number of workers
+num_workers = 0
+optimizer_name = "Adam"
+weight_decay = 0
+scheduler=false
+
+
+[log]
+wandb = false
+
+[save]
+save_dir = 'path_to_models_dir'
+
+[eval]
+model_id = 'model_id.pth'
