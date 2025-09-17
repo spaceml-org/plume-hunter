@@ -1,7 +1,7 @@
 # plume-hunter
 Detecting Methane Plumes Onboard Spacecraft
 
-## Towards Methane Detection On Board Satellites
+## Towards Methane Detection On Board Satellites [![arXiv](https://img.shields.io/badge/arXiv-2301.12345-b31b1b.svg)](https://arxiv.org/pdf/2509.00626)
 
 <details>
   <summary><b>Abstract</b></summary>
