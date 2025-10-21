@@ -26,11 +26,24 @@ pip install -e .
 ## Citation
 If you find the code or the UnorthoDOS datasets useful in your research, please consider citing our work.
 
+### 📄 Paper
 ```
 @article{chen2025towards,
   title={Towards Methane Detection Onboard Satellites},
   author={Chen, Maggie and Lambdouar, Hala and Marini, Luca and Mart{\'\i}nez-Ferrer, Laura and Bridges, Chris and Acciarini, Giacomo},
   journal={arXiv preprint arXiv:2509.00626},
   year={2025}
+}
+```
+
+### 📦 Dataset
+```
+@misc{maggie_chen_2025,
+	author       = { Maggie Chen and Hala Lambdouar and Luca Marini and Laura Martínez-Ferrer and Chris Bridges and Giacomo Acciarini },
+	title        = { UnorthoDOS (Revision a370bd0) },
+	year         = 2025,
+	url          = { https://huggingface.co/datasets/SpaceML/UnorthoDOS },
+	doi          = { 10.57967/hf/6778 },
+	publisher    = { Hugging Face }
 }
 ```
