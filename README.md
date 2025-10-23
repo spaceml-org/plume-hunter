@@ -38,7 +38,7 @@ If you find the code or the UnorthoDOS datasets useful in your research, please 
 
 ### 📦 Dataset
 ```
-@misc{maggie_chen_2025,
+@misc{UnorthoDOS,
 	author       = { Maggie Chen and Hala Lambdouar and Luca Marini and Laura Martínez-Ferrer and Chris Bridges and Giacomo Acciarini },
 	title        = { UnorthoDOS (Revision a370bd0) },
 	year         = 2025,
