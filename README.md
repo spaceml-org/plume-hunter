@@ -10,7 +10,7 @@ Methane is a potent greenhouse gas and a major driver of climate change, making 
 
 ### Dataset
 
-The hyperspectral images and corresponding methane plume masks of the UnorthoDOS (Unorthorectified Dataset for On Board Satellite methane detection) and its orthorectified counterpart datasets are available for download via <a href="https://huggingface.co/datasets/SpaceML/UnorthoDOS">Hugging Face</a>. Due to storage constraints, the full training and evaluation datasets could not be uploaded. If you're interested in accessing data without methane plumes, please feel free to contact us.
+The hyperspectral images and corresponding methane plume masks of the UnorthoDOS (Unorthorectified Dataset for On board Satellite methane detection) and its orthorectified counterpart datasets are available for download via <a href="https://huggingface.co/datasets/SpaceML/UnorthoDOS">Hugging Face</a>. Due to storage constraints, the full training and evaluation datasets could not be uploaded. If you're interested in accessing data without methane plumes, please feel free to contact us.
 
 ### Code
 
