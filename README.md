@@ -27,17 +27,18 @@ pip install -e .
 If you find the code or the UnorthoDOS datasets useful in your research, please consider citing our work.
 
 ### 📄 Paper
-```
-@article{chen2025towards,
+```bibtex
+@inproceedings{chen2025towards,
   title={Towards Methane Detection Onboard Satellites},
   author={Chen, Maggie and Lambdouar, Hala and Marini, Luca and Mart{\'\i}nez-Ferrer, Laura and Bridges, Chris and Acciarini, Giacomo},
-  journal={arXiv preprint arXiv:2509.00626},
+  booktitle = {Machine Learning and the Physical Sciences Workshop at NeurIPS 2026, San Diego, California, US},
+  url={https://arxiv.org/abs/2509.00626},
   year={2025}
 }
 ```
 
 ### 📦 Dataset
-```
+```bibtex
 @misc{UnorthoDOS,
 	author       = { Maggie Chen and Hala Lambdouar and Luca Marini and Laura Martínez-Ferrer and Chris Bridges and Giacomo Acciarini },
 	title        = { UnorthoDOS (Revision a370bd0) },
